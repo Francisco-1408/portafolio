@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Francisco García</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfoliol" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpeg" alt="">
+            </div>
+            <h1>Francisco García</h1>
+            <h2>Graphic Designer - Motion Graphic</h2>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy francisco García. </span>Nací el 14 de agosto de 1987 en la ciudad de Monterrey, Nuevo León, ahí viví hasta los 10 años, cuando por razones familiares me mude a Coahuila, en Parras, en este pueblito (ahora mágico) donde viví parte de mi niñez y adolescencia empezó mi gusto por las artes, desde la primaria, dibujando Gokus y Caballeros del Zodiaco. Después, en la secundaria, conocí el arte urbano por medio del graffiti, este fue el detonante para decidir estudiar algo relacionado con las artes, pero aún no sabía bien qué y, ya que no había muchas oportunidades de estudio ahí, tuve que moverme a Saltillo, la capital de Coahuila para estudiar Diseño Gráfico.</p>
+
+               </span>Aquí entré en la Universidad Autónoma del Noreste, pero terminando la licenciatura me di cuenta de qué la oferta de empleo no era  muy atractiva y en el 2016 decidí mudarme a la ciudad de las montañas, Monterrey Nuevo León, donde llevo trabajando en diferentes agencias y con distintos clientes de manera freelance hasta la fecha.</p>
+                
+               </span>Me considero alguien creativo, un poco introvertido y muy motivado, alguien a quien le gusta trabajar en equipo. En mi último trabajo, formaba parte de un grupo de 12 personas y aunque estábamos en Home Office nos comunicábamos varias veces al día para trabajar como una unidad. También he trabajado en agencias donde interactuaba con frecuencia con otros grupos como Ventas, Atención al Cliente y más. Me gusta un entorno como este, de ritmo rápido y orientado al trabajo en equipo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            14-08-1987
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            81-2200-5765
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            fco.gare@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Santa Catarina, Nuevo León México
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Diseñador Motion Graphic</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>PELÍCULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="CV.pdf" target="_blank"> 
+              <button>
+                Descargar CV <i class="fa-solid fa-download"></i>  
+                <span class="overlay"></span>
+              </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>InDesign</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ilustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>After Effects</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Diseño Gráfico</h4>
+                        <span class="casa">Universidad Autónoma del Noreste</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Desde que estaba en secundaria tenía la inquietud por la ilustración y el arte, y ya que en donde vivía no había ninguna carrera relacionada me mude a la ciudad de Saltillo Coahuila para estudiar la carrera de Diseño Gráfico.  </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programador HTML</h4>
+                        <span class="casa">Tutograma</span>
+                        <span class="fecha">20018 - 2018</span>
+                        <p>Gracias al diseño editorial entro mi curiosidad por las páginas web,  quería aprender a hacerlas desde 0, desde programarlas con código, así que buscando ampliar mis conocimientos, en el 2019 entre a unos cursos de HTML y CSSS.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Motion Graphics</h4>
+                        <span class="casa">Tutograma</span>
+                        <span class="fecha">2019 - 2019</span>
+                        <p>Cuando entre de lleno en el ambito de la publicidad, me llamo la curiosidad el darle vida a los diseños, así que tome un curso para aprender after effects e incursionar en la animación</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Diseño editorial</h4>
+                        <span class="casa">Périodico Vanguardia</span>
+                        <span class="fecha">2012 - 2016</span>
+                        <p>Me incoporporé a Vanguardia como diseñador editorial, haciendo diseños especiales como también armando páginas de publicación diaria, después de un tiemp empece a diseñar la portada principal del periódico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseñador</h4>
+                        <span class="casa">FHDS</span>
+                        <span class="fecha">2016 - 2018</span>
+                        <p>A mediados del 2016 me mude de ciudad por motivos de trabajo y me incorpore a FHDS como diseñador, donde me encargaba de realizar varios diseños para diferentes clientes como los son Home Depot, Soriana, América Móvil, CEMEX, ARKA y NEMAK.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseñador y Animador Motion Graphics</h4>
+                        <span class="casa">Casa Omega</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>En el 2019 entre como animador y diseñador a Casa Omega haciendo parrillas de diseños para redes sociales, así como publicidad, post- producción de video y animación 2d.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfoliol" class="portfoliol">
+        <div class="contenido-seccionl">
+            <h1>PORTAFOLIO</h1>
+            <h2>Logofolío</h2>
+            <div class="galerial">
+                <div class="proyectol">
+                    <img src="logo/L1.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L2.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L3.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L4.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L5.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L6.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L7.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L8.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyectol">
+                    <img src="logo/L9.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h1>PORTAFOLIO</h1>
+            <h2>Social Media</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="rs/rs1.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs2.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs3.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs4.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs5.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs6.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs7.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs8.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs9.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs10.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs11.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs12.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs13.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs14.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs15.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs16.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs17.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs18.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs19.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs20.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs21.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs22.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs23.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs24.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs25.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs26.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs27.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs28.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs29.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs30.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs31.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs32.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs33.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs34.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs35.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="rs/rs36.jpg" alt="">
+                    <div class="overlay"></div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+<section id="portfolio2" class="portfolio2">
+    <div class="contenido-seccion">
+        <h1>PORTAFOLIO</h1>
+        <h2>Motion Graphics</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <video src="vid/p37.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p38.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p39.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p40.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p41.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p42.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p43.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p44.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p45.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p46.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p47.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p48.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p49.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p50.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid//p51.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p52.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p53.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p54.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p55.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p56.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p57.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p58.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p59.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="proyecto">
+                <video src="vid/p60.mp4" controls alt="">
+                <div class="overlay">
+                </div>
+            </div>                
+        </div>
+    </div>
+</section>
+
+
+<section id="portfolio3" class="portfolio3">
+        <div class="contenido-seccion">
+            <h1>PORTAFOLIO</h1>
+            <h2>Poster</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="pos/p1.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p2.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p3.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p4.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p5.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p6.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>                
+                <div class="proyecto">
+                    <img src="pos/p7.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p8.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p9.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p10.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p11.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p12.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p13.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p14.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="proyecto">
+                    <img src="pos/p15.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+           <div>
+                    <h5>Esta colección contiene una mezcla de trabajos creados tanto para proyectos personales como para clientes. <h5>
+                     <h5>Muchas gracias a todas las personas con las que he tenido la oportunidad de trabajar en mi carrera.</h5>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+                <!-- Mapa -->
+                <div class="col">
+                    <a href="mailto:fco.gare@gmail.com" target="_blank">
+                         <button>
+                        fco.gare@gmail.com <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                        </button>
+                    </a>    
+                </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
